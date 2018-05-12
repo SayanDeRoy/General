@@ -7,7 +7,7 @@
   <description>BSE Testing</description>
   
   <properties>
-	<suiteXmlFile>com.bse.general/testng.xml</suiteXmlFile>
+	<suiteXmlFile>testng.xml</suiteXmlFile>
 </properties>
 
   <dependencies>
