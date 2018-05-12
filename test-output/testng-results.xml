@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14873" started-at="2018-05-12T20:30:07Z" finished-at="2018-05-12T20:30:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="14873" started-at="2018-05-12T20:30:07Z" finished-at="2018-05-12T20:30:22Z">
+      <class name="priority1.VerifyMultipleQuickLinksTitle">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="initializeBrowser" is-config="true" duration-ms="4054" started-at="2018-05-13T02:00:08Z" finished-at="2018-05-13T02:00:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="storeMultipleQuickLinksTitle" duration-ms="6140" started-at="2018-05-13T02:00:12Z" data-provider="GetData" finished-at="2018-05-13T02:00:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Get Quote]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storeMultipleQuickLinksTitle -->
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="storeMultipleQuickLinksTitle" duration-ms="2107" started-at="2018-05-13T02:00:18Z" data-provider="GetData" finished-at="2018-05-13T02:00:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Media Releases]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storeMultipleQuickLinksTitle -->
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="storeMultipleQuickLinksTitle" duration-ms="1511" started-at="2018-05-13T02:00:20Z" data-provider="GetData" finished-at="2018-05-13T02:00:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Trading Holidays]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- storeMultipleQuickLinksTitle -->
+        <test-method status="PASS" signature="verifyMultipleQuickLinksTitle()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="verifyMultipleQuickLinksTitle" duration-ms="3" started-at="2018-05-13T02:00:21Z" depends-on-methods="priority1.VerifyMultipleQuickLinksTitle.storeMultipleQuickLinksTitle" finished-at="2018-05-13T02:00:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleQuickLinksTitle -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@1b1473ab]" name="closeBrowser" is-config="true" duration-ms="1018" started-at="2018-05-13T02:00:21Z" finished-at="2018-05-13T02:00:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- priority1.VerifyMultipleQuickLinksTitle -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
