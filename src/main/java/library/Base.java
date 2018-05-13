@@ -220,11 +220,12 @@ public class Base {
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		String dest = "C:\\CodeJava\\workspace\\com.bse.general\\screenShot\\"+name+".png";
+		//String dest = "C:\\CodeJava\\workspace\\com.bse.general\\screenShot\\"+name+".png";
+		String dest = "./screenShot/"+name+".png";
 		File destination = new File(dest);
 		try {
 			FileUtils.copyFile(src, destination);
-			return dest;
+			return "."+dest;
 		} catch (IOException e) {
 			return e.getMessage();
 		}

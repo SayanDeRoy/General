@@ -43,7 +43,7 @@ public class VerifyMultipleQuickLinksTitle {
 		
 		for(int i = 0; i<expectedTitles.size(); i++)
 		{
-			System.out.println(actualTitles.get(i));
+			//System.out.println(actualTitles.get(i));
 			Assert.assertTrue(actualTitles.get(i).contains(expectedTitles.get(i)));
 		}
 		
