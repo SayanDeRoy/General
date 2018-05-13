@@ -30,8 +30,6 @@ public class Listeners implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		
 		String screenShotPath = Base.getScreenShot(result.getTestClass().getName()+"_"+result.getName());
-		//String image = logger.addScreenCapture(screenShotPath);
-		System.out.println(screenShotPath);
 		logger.log(LogStatus.FAIL, result.getName()+" Failed", logger.addScreenCapture(screenShotPath));
 		report.endTest(logger);
 		report.flush();
