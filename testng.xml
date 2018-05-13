@@ -12,8 +12,8 @@
   	</groups> -->
   	<packages>
   		<package name="priority1"/>
-  		<package name="priority2"/>
-  		<package name="priority3"/>
+  		<!-- <package name="priority2"/>
+  		<package name="priority3"/> -->
   	</packages>
   </test>
 </suite> <!-- Suite -->
