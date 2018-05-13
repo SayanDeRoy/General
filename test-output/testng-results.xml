@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="BSE Suite" duration-ms="21881" started-at="2018-05-13T19:31:05Z" finished-at="2018-05-13T19:31:26Z">
+  <suite name="BSE Suite" duration-ms="22921" started-at="2018-05-13T21:42:42Z" finished-at="2018-05-13T21:43:05Z">
     <groups>
       <group name="Smoke">
         <method signature="LandingPageTitleVerification.landingPageTitleVerification()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="landingPageTitleVerification" class="priority1.LandingPageTitleVerification"/>
       </group> <!-- Smoke -->
     </groups>
-    <test name="Regression Test" duration-ms="21881" started-at="2018-05-13T19:31:05Z" finished-at="2018-05-13T19:31:26Z">
+    <test name="Regression Test" duration-ms="22921" started-at="2018-05-13T21:42:42Z" finished-at="2018-05-13T21:43:05Z">
       <class name="priority1.LandingPageTitleVerification">
-        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="initializeBrowser" is-config="true" duration-ms="7283" started-at="2018-05-14T01:01:05Z" finished-at="2018-05-14T01:01:12Z">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="initializeBrowser" is-config="true" duration-ms="7356" started-at="2018-05-14T03:12:42Z" finished-at="2018-05-14T03:12:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method status="FAIL" signature="landingPageTitleVerification()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="landingPageTitleVerification" duration-ms="73" started-at="2018-05-14T01:01:12Z" finished-at="2018-05-14T01:01:12Z">
+        <test-method status="FAIL" signature="landingPageTitleVerification()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="landingPageTitleVerification" duration-ms="69" started-at="2018-05-14T03:12:49Z" finished-at="2018-05-14T03:12:49Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -57,17 +57,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- landingPageTitleVerification -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="closeBrowser" is-config="true" duration-ms="1034" started-at="2018-05-14T01:01:13Z" finished-at="2018-05-14T01:01:14Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:priority1.LandingPageTitleVerification@1d8bd0de]" name="closeBrowser" is-config="true" duration-ms="1061" started-at="2018-05-14T03:12:50Z" finished-at="2018-05-14T03:12:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- priority1.LandingPageTitleVerification -->
       <class name="priority1.VerifyMultipleQuickLinksTitle">
-        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="initializeBrowser" is-config="true" duration-ms="3377" started-at="2018-05-14T01:01:14Z" finished-at="2018-05-14T01:01:17Z">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="initializeBrowser" is-config="true" duration-ms="3276" started-at="2018-05-14T03:12:51Z" finished-at="2018-05-14T03:12:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="4805" started-at="2018-05-14T01:01:17Z" data-provider="GetData" finished-at="2018-05-14T01:01:22Z">
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="5433" started-at="2018-05-14T03:12:55Z" data-provider="GetData" finished-at="2018-05-14T03:13:00Z">
           <params>
             <param index="0">
               <value>
@@ -78,7 +78,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- storeMultipleQuickLinksTitle -->
-        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="1580" started-at="2018-05-14T01:01:22Z" data-provider="GetData" finished-at="2018-05-14T01:01:24Z">
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="1804" started-at="2018-05-14T03:13:00Z" data-provider="GetData" finished-at="2018-05-14T03:13:02Z">
           <params>
             <param index="0">
               <value>
@@ -89,7 +89,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- storeMultipleQuickLinksTitle -->
-        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="1603" started-at="2018-05-14T01:01:24Z" data-provider="GetData" finished-at="2018-05-14T01:01:25Z">
+        <test-method status="PASS" signature="storeMultipleQuickLinksTitle(java.lang.String)[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="storeMultipleQuickLinksTitle" duration-ms="1742" started-at="2018-05-14T03:13:02Z" data-provider="GetData" finished-at="2018-05-14T03:13:04Z">
           <params>
             <param index="0">
               <value>
@@ -100,11 +100,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- storeMultipleQuickLinksTitle -->
-        <test-method status="PASS" signature="verifyMultipleQuickLinksTitle()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="verifyMultipleQuickLinksTitle" duration-ms="1" started-at="2018-05-14T01:01:26Z" depends-on-methods="priority1.VerifyMultipleQuickLinksTitle.storeMultipleQuickLinksTitle" finished-at="2018-05-14T01:01:26Z">
+        <test-method status="PASS" signature="verifyMultipleQuickLinksTitle()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="verifyMultipleQuickLinksTitle" duration-ms="1" started-at="2018-05-14T03:13:04Z" depends-on-methods="priority1.VerifyMultipleQuickLinksTitle.storeMultipleQuickLinksTitle" finished-at="2018-05-14T03:13:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyMultipleQuickLinksTitle -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="closeBrowser" is-config="true" duration-ms="882" started-at="2018-05-14T01:01:26Z" finished-at="2018-05-14T01:01:26Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:priority1.VerifyMultipleQuickLinksTitle@45ca843]" name="closeBrowser" is-config="true" duration-ms="953" started-at="2018-05-14T03:13:04Z" finished-at="2018-05-14T03:13:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -11,7 +11,7 @@ import library.Base;
 
 public class Listeners implements ITestListener{
 	
-	ExtentReports report = new ExtentReports(".\\test-output\\ExtentReports.html");
+	ExtentReports report = new ExtentReports(".\\report\\ExtentReports.html");
 	ExtentTest logger;
 	
 	@Override

@@ -221,7 +221,7 @@ public class Base {
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
 		//String dest = "C:\\CodeJava\\workspace\\com.bse.general\\screenShot\\"+name+".png";
-		String dest = "./screenShot/"+name+".png";
+		String dest = "./report/snapshots/"+name+".png";
 		File destination = new File(dest);
 		try {
 			FileUtils.copyFile(src, destination);
