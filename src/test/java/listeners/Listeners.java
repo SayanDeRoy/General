@@ -29,7 +29,8 @@ public class Listeners implements ITestListener{
 	@Override
 	public void onTestFailure(ITestResult result) {
 		
-		String screenShotPath = Base.getScreenShot(result.getTestClass().getName()+"_"+result.getName());
+		//String screenShotPath = Base.getScreenShot(result.getTestClass().getName()+"_"+result.getName());
+		String screenShotPath = Base.getScreenShotBase64();
 		logger.log(LogStatus.FAIL, result.getName()+" Failed", logger.addScreenCapture(screenShotPath));
 		report.endTest(logger);
 		report.flush();

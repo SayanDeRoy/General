@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+
 import java.util.Calendar;
 import java.util.Date;
 import java.util.Iterator;
@@ -13,6 +14,7 @@ import java.util.Properties;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.*;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -220,14 +222,30 @@ public class Base {
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver;
 		File src = ts.getScreenshotAs(OutputType.FILE);
-		//String dest = "C:\\CodeJava\\workspace\\com.bse.general\\screenShot\\"+name+".png";
 		String dest = "./report/snapshots/"+name+".png";
 		File destination = new File(dest);
 		try {
 			FileUtils.copyFile(src, destination);
 			return "."+dest;
+			
 		} catch (IOException e) {
 			return e.getMessage();
 		}
+	}
+	public static String getScreenShotBase64() {
+	    File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+	    String encodedBase64 = null;
+	    FileInputStream fileInputStreamReader = null;
+	    try {
+	        fileInputStreamReader = new FileInputStream(scrFile);
+	        byte[] bytes = new byte[(int)scrFile.length()];
+	        fileInputStreamReader.read(bytes);
+	        encodedBase64 = new String(Base64.encodeBase64(bytes));
+	    } catch (FileNotFoundException e) {
+	        e.printStackTrace();
+	    } catch (IOException e) {
+	        e.printStackTrace();
+	    }
+	    return "data:image/png;base64,"+encodedBase64;
 	}
 }
