@@ -15,7 +15,7 @@ public class LandingPageTitleVerification {
 	WebDriver driver;
 	BSEMainPO bmp;
 	Base base = new Base();
-	String expectedTitle = "BSE Ltd. (Bombay Stock Exchange)";
+	String expectedTitle = "BSE Ltd (Bombay Stock Exchange)";
 	
 	@BeforeClass
 	public void initializeBrowser()
