@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BSE Suite]">
+  <listeners>
+    <listener class-name="listeners.Listeners"/>
+  </listeners>
+  <test name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="priority1.LandingPageTitleVerification">
         <methods>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
           <include name="landingPageTitleVerification"/>
         </methods>
       </class> <!-- priority1.LandingPageTitleVerification -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Regression Test(failed) -->
+</suite> <!-- Failed suite [BSE Suite] -->

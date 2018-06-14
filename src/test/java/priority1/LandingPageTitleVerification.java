@@ -9,19 +9,20 @@ import org.testng.annotations.Test;
 import library.Base;
 import pageObjectClasses.BSEMainPO;
 
-@Test(groups={"Smoke"})
 public class LandingPageTitleVerification {
 	
 	WebDriver driver;
 	BSEMainPO bmp;
 	Base base = new Base();
-	String expectedTitle = "BSE Ltd (Bombay Stock Exchange)";
+	String expectedTitle = "BSE Ltd. (Bombay Stock Exchange)";
 	
 	@BeforeClass
 	public void initializeBrowser()
 	{
 		driver = base.openBrowser();
-		base.openURL("stockUrl");
+		//driver.navigate().to("https://www.bseindia.com/");
+		driver.get("https://www.bseindia.com/");
+		//base.openURL("stockUrl");
 	}
 	@Test
 	public void landingPageTitleVerification()

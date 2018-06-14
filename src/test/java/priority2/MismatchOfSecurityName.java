@@ -1,5 +1,8 @@
 package priority2;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -20,9 +23,11 @@ public class MismatchOfSecurityName {
 	String validSecurityName = "TATA";
 	
 	@BeforeClass
-	public void initializeBrowser()
+	public void initializeBrowser() throws MalformedURLException
 	{
+		//URL url = new URL("https://www.bseindia.com/");
 		driver = base.openBrowser();
+		//driver.navigate().to(url);
 		base.openURL("stockUrl");
 	}
 	@Test

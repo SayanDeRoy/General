@@ -29,7 +29,8 @@ public class VerifyMultipleQuickLinksTitle {
 	@Test(dataProvider = "GetData")
 	public void storeMultipleQuickLinksTitle(String quickLinks)
 	{
-		base.openURL("stockUrl");
+		driver.navigate().to("https://www.bseindia.com/");
+		//base.openURL("stockUrl");
 		bmp = new BSEMainPO(driver);
 		bmp.clickOnquickLink(quickLinks);
 		actualTitles.add(driver.getTitle());

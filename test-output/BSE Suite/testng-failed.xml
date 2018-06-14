@@ -5,11 +5,14 @@
     <listener class-name="listeners.Listeners"/>
   </listeners>
   <test name="Regression Test(failed)">
+    <groups>
+      <run>
+        <include name="Smoke"/>
+      </run>
+    </groups>
     <classes>
       <class name="priority1.LandingPageTitleVerification">
         <methods>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
           <include name="landingPageTitleVerification"/>
         </methods>
       </class> <!-- priority1.LandingPageTitleVerification -->

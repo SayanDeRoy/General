@@ -3,13 +3,14 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="priority1.LandingPageTitleVerification">
+      <class name="priority2.MismatchOfSecurityName">
         <methods>
           <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
-          <include name="landingPageTitleVerification"/>
+          <include name="performLandingPageActivity"/>
+          <include name="verifyMismatchOfSecurityName"/>
         </methods>
-      </class> <!-- priority1.LandingPageTitleVerification -->
+      </class> <!-- priority2.MismatchOfSecurityName -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
