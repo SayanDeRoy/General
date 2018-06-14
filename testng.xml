@@ -6,7 +6,6 @@
 	</listeners>
   <test name="Regression Test" parallel="false">
   	<packages>
-  		<package name="priority1"/>
   		<package name="priority2"/>
   		<package name="priority3"/>
   	</packages>
