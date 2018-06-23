@@ -23,7 +23,7 @@ public class BSEMainPO extends Listeners{
 	
 	WebDriver driver;
 	Logger log = LogManager.getLogger(BSEMainPO.class.getName());
-	public String expectedTitle = "BSE Ltd. (Bombay Stock Exchange) | Live Stock Market Updates for S&P BSE SENSEX,Stock Quotes & Corporate Information";
+	public String expectedTitle = "BSE Ltd (Bombay Stock Exchange) | Live Stock Market Updates for S&P BSE SENSEX,Stock Quotes & Corporate Information";
 	
 
 //-----------------------------Constructor Initialization---------------------------//	

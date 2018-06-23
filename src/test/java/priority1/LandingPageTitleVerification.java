@@ -6,10 +6,13 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import com.relevantcodes.extentreports.LogStatus;
+
 import library.Base;
+import listeners.Listeners;
 import pageObjectClasses.BSEMainPO;
 
-public class LandingPageTitleVerification {
+public class LandingPageTitleVerification extends Listeners {
 	
 	WebDriver driver;
 	BSEMainPO bmp;
@@ -29,7 +32,15 @@ public class LandingPageTitleVerification {
 	{
 		bmp = new BSEMainPO(driver);
 		String actualTitle = driver.getTitle();
-		Assert.assertTrue(actualTitle.contains(expectedTitle));
+		if(actualTitle.contains(bmp.expectedTitle))
+		{
+			Assert.assertTrue(actualTitle.contains(bmp.expectedTitle));
+		}
+		else
+		{
+			logger.log(LogStatus.INFO, "Title Mismatch");
+			Assert.assertTrue(actualTitle.contains(bmp.expectedTitle));
+		}
 	}
 	@AfterClass
 	public void closeBrowser()

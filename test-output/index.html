@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-BSE_Suite">
-              <span class="suite-name border-passed">BSE Suite</span>
+              <span class="suite-name border-failed">BSE Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-BSE_Suite" class="hide-methods failed suite-BSE_Suite"> (hide)</a> <!-- hide-methods failed suite-BSE_Suite -->
+                      <a href="#" panel-name="suite-BSE_Suite" class="show-methods failed suite-BSE_Suite"> (show)</a> <!-- show-methods failed suite-BSE_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-BSE_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.LandingPageTitleVerification" hash-for-method="landingPageTitleVerification">landingPageTitleVerification</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-BSE_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,22 +116,17 @@
                     <div class="method-list-content passed suite-BSE_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.LandingPageTitleVerification" hash-for-method="landingPageTitleVerification">landingPageTitleVerification</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.VerifyMultipleQuickLinksTitle" hash-for-method="storeMultipleQuickLinksTitle(Media Releases)">storeMultipleQuickLinksTitle(Media Releases)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.VerifyMultipleQuickLinksTitle" hash-for-method="storeMultipleQuickLinksTitle(Get Quote)">storeMultipleQuickLinksTitle(Get Quote)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.VerifyMultipleQuickLinksTitle" hash-for-method="storeMultipleQuickLinksTitle(Trading Holidays)">storeMultipleQuickLinksTitle(Trading Holidays)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.VerifyMultipleQuickLinksTitle" hash-for-method="storeMultipleQuickLinksTitle(Trading Holidays)">storeMultipleQuickLinksTitle(Trading Holidays)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-BSE_Suite" title="priority1.VerifyMultipleQuickLinksTitle" hash-for-method="storeMultipleQuickLinksTitle(Get Quote)">storeMultipleQuickLinksTitle(Get Quote)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,6 +146,25 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-BSE_Suite" class="panel BSE_Suite">
+          <div class="suite-BSE_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">priority1.LandingPageTitleVerification</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="landingPageTitleVerification">
+                  </a> <!-- landingPageTitleVerification -->
+                  <span class="method-name">landingPageTitleVerification</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at priority1.LandingPageTitleVerification.landingPageTitleVerification(LandingPageTitleVerification.java:42)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-BSE_Suite-class-failed -->
           <div class="suite-BSE_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -153,14 +181,6 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="storeMultipleQuickLinksTitle(Get Quote)">
-                  </a> <!-- storeMultipleQuickLinksTitle(Get Quote) -->
-                  <span class="method-name">storeMultipleQuickLinksTitle</span>
-                  <span class="parameters">(Get Quote)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="storeMultipleQuickLinksTitle(Trading Holidays)">
                   </a> <!-- storeMultipleQuickLinksTitle(Trading Holidays) -->
                   <span class="method-name">storeMultipleQuickLinksTitle</span>
@@ -169,24 +189,17 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="storeMultipleQuickLinksTitle(Get Quote)">
+                  </a> <!-- storeMultipleQuickLinksTitle(Get Quote) -->
+                  <span class="method-name">storeMultipleQuickLinksTitle</span>
+                  <span class="parameters">(Get Quote)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="verifyMultipleQuickLinksTitle">
                   </a> <!-- verifyMultipleQuickLinksTitle -->
                   <span class="method-name">verifyMultipleQuickLinksTitle</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-BSE_Suite-class-passed -->
-          <div class="suite-BSE_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">priority1.LandingPageTitleVerification</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="landingPageTitleVerification">
-                  </a> <!-- landingPageTitleVerification -->
-                  <span class="method-name">landingPageTitleVerification</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -254,28 +267,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'storeMultipleQuickLinksTitle')
 data.setCell(0, 2, 'priority1.VerifyMultipleQuickLinksTitle')
-data.setCell(0, 3, 5986);
+data.setCell(0, 3, 7429);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'storeMultipleQuickLinksTitle')
 data.setCell(1, 2, 'priority1.VerifyMultipleQuickLinksTitle')
-data.setCell(1, 3, 2051);
+data.setCell(1, 3, 4827);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'storeMultipleQuickLinksTitle')
 data.setCell(2, 2, 'priority1.VerifyMultipleQuickLinksTitle')
-data.setCell(2, 3, 1761);
+data.setCell(2, 3, 2245);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'landingPageTitleVerification')
 data.setCell(3, 2, 'priority1.LandingPageTitleVerification')
-data.setCell(3, 3, 83);
+data.setCell(3, 3, 65);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verifyMultipleQuickLinksTitle')
 data.setCell(4, 2, 'priority1.VerifyMultipleQuickLinksTitle')
-data.setCell(4, 3, 2);
+data.setCell(4, 3, 6);
 window.suiteTableData['BSE_Suite']= { tableData: data, tableDiv: 'times-div-BSE_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 14 seconds</span>
               <div id="times-div-BSE_Suite">
               </div> <!-- times-div-BSE_Suite -->
             </div> <!-- times-div -->
@@ -307,39 +320,41 @@ return data;
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">landingPageTitleVerification</span>
-                <span class="method-start">9180 ms</span>
+                <span class="method-start">7888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">9827 ms</span>
+                <span class="method-start">8946 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">priority1.VerifyMultipleQuickLinksTitle</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">initializeBrowser</span>
-                <span class="method-start">11073 ms</span>
+                <span class="method-start">9988 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">storeMultipleQuickLinksTitle(Get Quote)</span>
-                <span class="method-start">14612 ms</span>
+                <span class="method-start">13488 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">storeMultipleQuickLinksTitle(Media Releases)</span>
-                <span class="method-start">20644 ms</span>
+                <span class="method-start">18359 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">storeMultipleQuickLinksTitle(Trading Holidays)</span>
-                <span class="method-start">22726 ms</span>
+                <span class="method-start">20656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyMultipleQuickLinksTitle</span>
-                <span class="method-start">24551 ms</span>
+                <span class="method-start">28146 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">24629 ms</span>
+                <span class="method-start">28325 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -4,18 +4,15 @@
   <listeners>
     <listener class-name="listeners.Listeners"/>
   </listeners>
-  <test name="Regression Test(failed)">
-    <groups>
-      <run>
-        <include name="Smoke"/>
-      </run>
-    </groups>
+  <test name="Smoke Test(failed)">
     <classes>
       <class name="priority1.LandingPageTitleVerification">
         <methods>
+          <include name="initializeBrowser"/>
+          <include name="closeBrowser"/>
           <include name="landingPageTitleVerification"/>
         </methods>
       </class> <!-- priority1.LandingPageTitleVerification -->
     </classes>
-  </test> <!-- Regression Test(failed) -->
+  </test> <!-- Smoke Test(failed) -->
 </suite> <!-- Failed suite [BSE Suite] -->
