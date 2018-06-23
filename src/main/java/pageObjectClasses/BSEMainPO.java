@@ -10,11 +10,16 @@ import org.openqa.selenium.support.FindAll;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class BSEMainPO {
+import com.relevantcodes.extentreports.LogStatus;
+
+import listeners.Listeners;
+
+public class BSEMainPO extends Listeners{
 	
 	WebDriver driver;
 	Logger log = LogManager.getLogger(BSEMainPO.class.getName());
 	public String expectedTitle = "BSE Ltd. (Bombay Stock Exchange) | Live Stock Market Updates for S&P BSE SENSEX,Stock Quotes & Corporate Information";
+	
 
 //-----------------------------Constructor Initialization---------------------------//	
 	public BSEMainPO(WebDriver driver)
@@ -62,6 +67,7 @@ public class BSEMainPO {
 		if(count == 0)
 		{
 			log.error(mainLinkValue+ " Element Not Found");
+			logger.log(LogStatus.INFO, "Element Not Found");
 			throw new RuntimeException("Invalid Main Link");
 			
 		}
